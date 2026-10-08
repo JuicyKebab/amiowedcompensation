@@ -1,0 +1,15 @@
+{
+  // Cloudflare Worker: serveert de statische Next-export (out/) via de ASSETS-binding
+  // en handelt /api/flight-status af in worker.js. AeroDataBox-key = Worker-secret
+  // (`wrangler secret put AERODATABOX_KEY`).
+  "name": "flightcomp",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./out", "binding": "ASSETS" },
+  "observability": { "enabled": true },
+  // Custom domain: Worker serveert op de apex. CF maakt DNS + cert automatisch aan bij deploy.
+  // www -> apex redirect regel je los (dashboard Redirect Rule); canonical = apex.
+  "routes": [
+    { "pattern": "amiowedcompensation.com", "custom_domain": true }
+  ]
+}
