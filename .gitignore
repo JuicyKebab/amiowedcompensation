@@ -4,3 +4,13 @@ out/
 .env*.local
 .dev.vars
 .wrangler/
+
+# Interne strategie/marketing-docs (niet publiek)
+ACTION-PLAN.md
+FULL-AUDIT-REPORT.md
+SEO-PLAYBOOK-PLAN.md
+marketing-audit-*.md
+competitive-*.md
+research.md
+mvp-scope.md
+brand-context.md
