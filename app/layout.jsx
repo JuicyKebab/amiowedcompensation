@@ -40,6 +40,8 @@ export default function RootLayout({ children }) {
               <Link href="/methodology" className="hover:text-sky-700">Methodology</Link>
               <Link href="/changelog" className="hover:text-sky-700">Changelog</Link>
               <Link href="/privacy" className="hover:text-sky-700">Privacy</Link>
+              <a href="https://www.instagram.com/amiowedcomp/" target="_blank" rel="me noopener" className="hover:text-sky-700">Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=61595377379267" target="_blank" rel="me noopener" className="hover:text-sky-700">Facebook</a>
             </div>
             <p className="mt-4 max-w-2xl">
               {SITE.name} gives general information on air passenger rights, not legal advice. Compensation is never
